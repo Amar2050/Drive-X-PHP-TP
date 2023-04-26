@@ -10,11 +10,11 @@
     </h1>
 
     <div class="row flex-lg-row flex-xl-row flex-column">
-        <?php foreach ($drivers as $driver) {
+        <?php foreach ($drivers as $driver) : ?>
 
-            require "./partials/driver.card.php"  ;
+            <?php require "./partials/driver.card.php"  ?>
 
-            } ?>
+        <?php endforeach; ?>
     </div>
 </div>
 
