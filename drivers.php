@@ -10,26 +10,16 @@
     </h1>
 
     <div class="row flex-lg-row flex-xl-row flex-column">
-
         <?php foreach ($drivers as $driver) : ?>
 
             <?php require "./partials/driver.card.php"  ?>
 
         <?php endforeach; ?>
-
-
-
-
     </div>
-
-
-
-
 </div>
 
 <?php require_once "./partials/header.php" ?>
 
 </body>
-
 
 </html>
