@@ -21,34 +21,8 @@
         </p>
 
         <p>Discipline:
-
-                                        <!-- SWICTCH  -->
-<?php switch ($driver["category"]): ?>
-<?php case $driver["category"] == "formule 1": ?>
-    <span class="badge badge-success"> <?= $driver["category"] ?> </span>
-<?php break; ?>
-
-<?php case $driver["category"] == "gymkhana": ?>
-    <span class="badge badge-primary"> <?= $driver["category"] ?> </span>
-<?php break; ?>
-
-<?php case $driver["category"] == "drag": ?>
-    <span class="badge badge-info"> <?= $driver["category"] ?> </span>
-<?php break; ?>
-
-<?php case $driver["category"] == "rallye": ?>
-    <span class="badge badge-danger"> <?= $driver["category"] ?> </span>
-<?php break; ?>
-
-<?php case $driver["category"] == "nascar": ?>
-    <span class="badge badge-warning"> <?= $driver["category"] ?> </span>
-<?php break; ?>
-
-<?php endswitch; ?>
-                            <!-- END SWICTCH  -->
-         
+            <?php  driverCategorySwitch($driver["category"])?>
         </p>
-
 
 
         <button class="btn btn-success mx-2 border">

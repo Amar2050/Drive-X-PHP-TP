@@ -15,24 +15,7 @@
             <?php endif; ?>
         </p>
 
-        <p>Puissance:
-                                <!-- SWICTCH  -->
-<?php switch ($car["power"]): ?>
-<?php case $car["power"] < 1000: ?>
-    <span class="badge badge-danger"> <?= $car["power"] ?> CH</span>
-<?php break; ?>
-
-<?php case $car["power"] >= 1000 && $car["power"] <= 1200 : ?>
-    <span class="badge badge-warning"> <?= $car["power"] ?> CH</span>
-<?php break; ?>
-
-<?php case $car["power"] > 1200: ?>
-    <span class="badge badge-success"> <?= $car["power"] ?> CH</span>
-<?php break; ?>
-
-<?php endswitch; ?>
-                            <!-- END SWICTCH  -->
-        </p>
+        <p>Puissance: <?php carPowerSwitch($car["power"]); ?></p>
 
 
 
